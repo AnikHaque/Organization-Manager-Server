@@ -191,10 +191,7 @@ async function run() {
 
     // get donation array by user email
     app.get("/donation/:email", async (req, res) => {
-      //find all organizations
-      // const query={
-      //   organization: req.query.organization
-      // }
+     
       const email = req.params.email;
 
       const query = { email: email };
