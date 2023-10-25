@@ -201,10 +201,7 @@ async function run() {
 
     // get all transactions
     app.get("/all-transaction", async (req, res) => {
-      //find all organizations
-      // const query={
-      //   organization: req.query.organization
-      // }
+      
       const organizations = await paymentCollection.find({}).toArray();
       res.send(organizations);
     });
