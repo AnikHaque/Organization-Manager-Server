@@ -212,8 +212,7 @@ async function run() {
       const data = {
         total_amount: paymentInfo.amount,
         currency: "BDT",
-        tran_id: transactionId, // use unique tran_id for each api call
-        // success_url: `http://localhost:5000/due-payment/success?transactionId=${transactionId}`,
+        tran_id: transactionId, 
         success_url: `https://organization-manager-server.onrender.com/due-payment/success?transactionId=${transactionId}`,
         fail_url: "http://localhost:3030/fail",
         cancel_url: "http://localhost:3030/cancel",
