@@ -287,13 +287,13 @@ async function run() {
 
       if (result.modifiedCount > 0) {
         res.redirect(
-          // `http://127.0.0.1:5173/dashboard/payment/success?transactionID=${transactionId}`
+          
           `https://organization-manager.vercel.app/dashboard/payment/success?transactionID=${transactionId}`
         );
       }
     });
   } finally {
-    // Ensures that the client will close when you finish/error
+    
   }
 }
 
