@@ -261,8 +261,7 @@ async function run() {
       };
       const sslcz = new SSLCommerzPayment(store_id, store_passwd, is_live);
       sslcz.transactionQueryByTransactionId(data).then((data) => {
-        //process the response that got from sslcommerz
-        //https://developer.sslcommerz.com/doc/v4/#by-session-id
+       
         res.send(data);
       });
     });
@@ -274,8 +273,7 @@ async function run() {
       };
       const sslcz = new SSLCommerzPayment(store_id, store_passwd, is_live);
       sslcz.validate(data).then((data) => {
-        //process the response that got from sslcommerz
-        // https://developer.sslcommerz.com/doc/v4/#order-validation-api
+        
         res.send(data);
       });
     });
